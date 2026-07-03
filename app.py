@@ -94,7 +94,7 @@ def _load_document(uploaded_file) -> tuple[list[dict], str]:
         pages = raw
     else:
         st.error(
-            "Unrecognised JSON structure. "
+            "Unrecognized JSON structure. "
             'Expected {"pages": [...]} or a bare JSON array of page objects.'
         )
         st.stop()

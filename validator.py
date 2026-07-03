@@ -87,7 +87,7 @@ def _html_to_text(html: str) -> str:
     """Strip HTML markup and return plain text."""
     if not html:
         return ""
-    soup = BeautifulSoup(html, "lxml")
+    soup = BeautifulSoup(html, "html.parser")
     return soup.get_text(separator=" ")
 
 
